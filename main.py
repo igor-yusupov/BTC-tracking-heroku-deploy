@@ -59,7 +59,7 @@ async def send_to_admin(message: types.Message):
             currency.current_currency = btc
         else:
             pass
-        time.sleep(5)
+        time.sleep(60)
 
 
 async def on_startup(dp):
