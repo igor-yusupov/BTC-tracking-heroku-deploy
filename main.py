@@ -49,8 +49,8 @@ class Currency:
 @dp.message_handler(commands='start')
 async def send_to_admin(message: types.Message):
     await bot.send_message(message.chat.id, "I'm working")
+    currency = Currency()
     while True:
-        currency = Currency()
         btc = currency.check_currency()
         current = currency.current_currency
         if abs(current - btc) >= currency.differece:
